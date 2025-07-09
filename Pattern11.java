@@ -6,6 +6,7 @@ class Pattern11 {
         int n;
         System.out.println("Enter no of rows:");
         n = sc.nextInt();
+        System.out.println("The pattern is:");
         int i, j, start = 1;
         for (i = 1; i <= n; i++) {
             if (i % 2 == 0) {

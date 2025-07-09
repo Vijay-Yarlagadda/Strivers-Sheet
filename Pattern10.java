@@ -7,6 +7,7 @@ class Pattern10 {
         System.out.println("Enter no of rows:");
         n = sc.nextInt();
         int i, j;
+        System.out.println("The pattern is:");
         for (i = 0; i < n; i++) {
             // stars
             for (j = 0; j < i + 1; j++) {

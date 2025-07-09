@@ -6,7 +6,7 @@ class Pattern9 {
         int n;
         System.out.println("Enter no of rows:");
         n = sc.nextInt();
-
+        System.out.println("The pattern is:");
         int i, j;
         for (i = 0; i < n; i++) {
             // spaces
