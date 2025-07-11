@@ -1,16 +1,17 @@
 import java.util.*;
 
-class CountDigits {
+class Prime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n;
+        int n,i;
         System.out.print("Enter a number: ");
         n=sc.nextInt();
         int count=0;
-            while(n!=0){
+            for(i=1;i<=n;i++){
+            if(n%i==0){
                 count++;
-                n=n/10;
             }
-            System.out.println(count);
+          }
+	System.out.println(count==2);
     }
 }
