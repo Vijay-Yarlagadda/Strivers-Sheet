@@ -1,5 +1,6 @@
 import java.util.*;
 
+//inn this techniques using there positions we swap, take first element as base and if any element is smaller than the base, we swap it with the base. so onn...
 class SelectionSort {
     public int[] selectionSort(int[] nums) {
         int i, j, temp;
@@ -18,7 +19,7 @@ class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {7, 4, 1, 5, 3};
+        int[] arr = { 7, 4, 1, 5, 3 };
 
         SelectionSort s = new SelectionSort();
         int[] sorted = s.selectionSort(arr);
