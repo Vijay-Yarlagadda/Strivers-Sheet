@@ -1,5 +1,8 @@
 import java.util.*;
 
+//compares first element with second, if first is greater than second, swap them
+//then compares second with third, if second is greater than third, swap them
+
 class BubbleSortTechnique {
     public int[] bubbleSort(int[] nums) {
         int i, j, temp;
@@ -16,7 +19,7 @@ class BubbleSortTechnique {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5, 4, 4, 1, 1};
+        int[] arr = { 5, 4, 4, 1, 1 };
 
         BubbleSortTechnique s = new BubbleSortTechnique();
         int[] sorted = s.bubbleSort(arr);
