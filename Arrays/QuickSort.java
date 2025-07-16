@@ -16,20 +16,23 @@ class QuickSort {
     }
 
     public int partition(int a[], int low, int high) {
-        int i = low, j = high, temp, pivot = a[low];
-        while (i < j) {
-            while (a[i] <= pivot)
-                i = i + 1;
+        int i = low + 1, j = high, temp;
+        int pivot = a[low];
+        while (i <= j) {
+            while (i <= high && a[i] <= pivot)
+                i++;
             while (a[j] > pivot)
-                j = j - 1;
+                j--;
             if (i < j) {
                 temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
             }
         }
+        temp = a[low];
         a[low] = a[j];
-        a[j] = pivot;
+        a[j] = temp;
+
         return j;
     }
 
