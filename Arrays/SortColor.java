@@ -2,16 +2,26 @@ import java.util.*;
 
 class SortColor {
     public void sortColors(int[] nums) {
-        int n = nums.length / 3;
-        int j = 0;
-        for (int i = 0; i < nums.length; i += n) {
-            for (int k = 0 + i; k < n + i; k++) {
-                nums[k] = j;
-            }
-            j++;
-        }
+        int one = 0, zero = 0, two = 0;
         for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
+            if (nums[i] == 0)
+                zero++;
+            else if (nums[i] == 1)
+                one++;
+            else
+                two++;
+        }
+        for (int i = 0; i < zero; i++) {
+            nums[i] = 0;
+        }
+        for (int i = zero; i < one + zero; i++) {
+            nums[i] = 1;
+        }
+        for (int i = one + zero; i < nums.length; i++) {
+            nums[i] = 2;
+        }
+        for (int num : nums) {
+            System.out.print(num + " ");
         }
     }
 
