@@ -4,15 +4,14 @@ class SortColor {
     public void sortColors(int[] nums) {
         int n = nums.length / 3;
         int j = 0;
-        int a[] = new int[nums.length];
         for (int i = 0; i < nums.length; i += n) {
             for (int k = 0 + i; k < n + i; k++) {
-                a[k] = j;
+                nums[k] = j;
             }
             j++;
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
         }
     }
 
