@@ -2,14 +2,14 @@ import java.util.*;
 
 class MajorityElementFinder {
     public int majorityElement(int[] nums) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
-            if (map.get(nums[i]) > nums.length / 2) {
-                return nums[i];
+        int count = 0, element = 0;
+        for (int num : nums) {
+            if (count == 0) {
+                element = num;
             }
+            count += (num == element) ? 1 : -1;
         }
-        return -1;
+        return element;
     }
 
     public static void main(String[] args) {
