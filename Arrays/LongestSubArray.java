@@ -37,5 +37,6 @@ class LongestSubArray {
         LongestSubArray la = new LongestSubArray();
         int result = la.longestSubarray(a, k);
         System.out.println("Result: " + result);
+        sc.close();
     }
 }

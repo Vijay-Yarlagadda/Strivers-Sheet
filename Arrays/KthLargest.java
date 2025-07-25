@@ -29,5 +29,6 @@ class KthLargest {
         KthLargest sol = new KthLargest();
         int result = sol.findKthLargest(arr, k);
         System.out.println("Kth Largest Element: " + result);
+        sc.close();
     }
 }

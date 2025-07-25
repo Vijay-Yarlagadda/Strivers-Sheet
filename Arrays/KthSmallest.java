@@ -7,11 +7,12 @@ class KthSmallest {
         for (int num : nums) {
             pq.add(num);
             if (pq.size() > k) {
-                pq.poll();            
-		 }
+                pq.poll();
+            }
         }
 
-        return pq.peek();     }
+        return pq.peek();
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,5 +29,6 @@ class KthSmallest {
         KthSmallest sol = new KthSmallest();
         int result = sol.findKthSmallest(arr, k);
         System.out.println("Kth Smallest Element: " + result);
+        sc.close();
     }
 }

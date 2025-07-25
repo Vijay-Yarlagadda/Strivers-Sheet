@@ -24,5 +24,6 @@ class LargeInArray {
         LargeInArray obj = new LargeInArray();
         int largest = obj.largestElement(arr);
         System.out.println("The largest element in the array is: " + largest);
+        sc.close();
     }
 }

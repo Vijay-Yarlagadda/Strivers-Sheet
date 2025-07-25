@@ -29,5 +29,6 @@ public class LeadersInArray {
         for (int val : result) {
             System.out.print(val + " ");
         }
+        sc.close();
     }
 }
