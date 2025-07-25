@@ -2,17 +2,17 @@ import java.util.*;
 
 public class LeadersInArray {
     public List<Integer> findLeaders(int[] nums) {
-        List<Integer> leaders = new ArrayList<>();
-        int maxFromRight = nums[nums.length - 1];
-        leaders.add(maxFromRight);
+        List<Integer> list = new ArrayList<>();
+        int temp = nums[nums.length - 1];
+        list.add(temp);
         for (int i = nums.length - 2; i >= 0; i--) {
-            if (nums[i] > maxFromRight) {
-                maxFromRight = nums[i];
-                leaders.add(maxFromRight);
+            if (nums[i] > temp) {
+                temp = nums[i];
+                list.add(temp);
             }
         }
-        Collections.reverse(leaders);
-        return leaders;
+        Collections.reverse(list);
+        return list;
     }
 
     public static void main(String[] args) {
