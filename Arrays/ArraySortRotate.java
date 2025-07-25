@@ -23,5 +23,6 @@ class ArraySortRotate {
         ArraySortRotate sol = new ArraySortRotate();
         boolean result = sol.check(arr);
         System.out.println("Check result: " + result);
+        sc.close();
     }
 }
