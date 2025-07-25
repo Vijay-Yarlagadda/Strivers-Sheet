@@ -11,7 +11,7 @@ public class LeadersInArray {
                 leaders.add(maxFromRight);
             }
         }
-        // Collections.reverse(leaders);
+        Collections.reverse(leaders);
         return leaders;
     }
 
