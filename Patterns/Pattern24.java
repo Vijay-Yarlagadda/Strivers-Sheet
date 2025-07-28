@@ -8,6 +8,11 @@ class Pattern24 {
         int n = sc.nextInt();
         System.out.println("The pattern is:");
         for (i = 1; i <= n; i++) {
+            // spaces
+            for (j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            // numbers
             if (i % 2 == 0) {
                 for (j = 1; j <= i; j++) {
                     System.out.print(even + " ");
