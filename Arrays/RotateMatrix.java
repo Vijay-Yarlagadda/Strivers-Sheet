@@ -4,7 +4,7 @@ class RotateMatrix {
     public void rotate(int[][] matrix) {
         int n = matrix.length, i, j;
 
-        // Transpose
+        // Transpose the matrix
         for (i = 0; i < n; i++) {
             for (j = i; j < n; j++) {
                 int temp = matrix[i][j];
