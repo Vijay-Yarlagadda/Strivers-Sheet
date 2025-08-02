@@ -33,5 +33,6 @@ public class TwoSum {
 
         int[] result = obj.twoSum(nums, target);
         System.out.println("Indexes: " + result[0] + ", " + result[1]);
+        sc.close();
     }
 }

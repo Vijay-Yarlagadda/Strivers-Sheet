@@ -24,5 +24,6 @@ class MaxSubArraySum {
         }
         MaxSubArraySum obj = new MaxSubArraySum();
         System.out.println(obj.maxSubArray(nums));
+        sc.close();
     }
 }

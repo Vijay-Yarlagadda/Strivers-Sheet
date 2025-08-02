@@ -61,5 +61,6 @@ class MergeSort {
         for (int num : nums) {
             System.out.print(num + " ");
         }
+        sc.close();
     }
 }

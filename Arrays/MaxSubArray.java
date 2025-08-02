@@ -33,5 +33,6 @@ class MaxSubArray {
         }
         MaxSubArray obj = new MaxSubArray();
         System.out.println("MAX SUB ARR SUM: " + obj.maxSubArray(nums));
+        sc.close();
     }
 }

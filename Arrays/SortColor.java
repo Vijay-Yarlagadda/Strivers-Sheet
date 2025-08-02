@@ -36,5 +36,6 @@ class SortColor {
         }
         SortColor scs = new SortColor();
         scs.sortColors(a);
+        sc.close();
     }
 }

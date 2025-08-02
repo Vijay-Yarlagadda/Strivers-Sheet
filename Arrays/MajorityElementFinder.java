@@ -24,5 +24,6 @@ class MajorityElementFinder {
         MajorityElementFinder obj = new MajorityElementFinder();
         int result = obj.majorityElement(nums);
         System.out.println("Majority Element in given list: " + result);
+        sc.close();
     }
 }

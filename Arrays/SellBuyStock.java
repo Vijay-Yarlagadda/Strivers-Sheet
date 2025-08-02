@@ -23,5 +23,6 @@ public class SellBuyStock {
         SellBuyStock obj = new SellBuyStock();
         int profit = obj.maxProfit(prices);
         System.out.println("Maximum Profit: " + profit);
+        sc.close();
     }
 }
