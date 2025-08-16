@@ -30,5 +30,6 @@ public class moveZeros {
         for (int num : arr) {
             System.out.print(num + " ");
         }
+        sc.close();
     }
 }

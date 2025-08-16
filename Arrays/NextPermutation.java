@@ -58,5 +58,6 @@ public class NextPermutation {
 
         NextPermutation obj = new NextPermutation();
         obj.nextPermutation(nums);
+        sc.close();
     }
 }

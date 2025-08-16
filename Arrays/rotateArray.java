@@ -35,5 +35,6 @@ public class rotateArray {
         int k = sc.nextInt();
         rotateArray r = new rotateArray();
         r.rotate(arr, k);
+        sc.close();
     }
 }

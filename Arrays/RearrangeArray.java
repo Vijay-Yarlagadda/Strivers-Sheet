@@ -32,5 +32,6 @@ public class RearrangeArray {
         for (int val : res) {
             System.out.print(val + " ");
         }
+        sc.close();
     }
 }
