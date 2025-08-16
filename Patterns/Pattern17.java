@@ -28,6 +28,7 @@ class Pattern17 {
                 System.out.print(" " + " ");
             }
             System.out.println();
+            sc.close();
         }
     }
 }

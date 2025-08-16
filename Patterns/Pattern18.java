@@ -7,6 +7,7 @@ class Pattern18 {
         int n = sc.nextInt();
         int i, j;
         System.out.println("Pattern is:");
+        sc.close();
         for (i = 0; i < n; i++) {
             // alphabets
             char start = (char) ('A' + n - 1);
@@ -16,5 +17,6 @@ class Pattern18 {
             }
             System.out.println();
         }
+
     }
 }
