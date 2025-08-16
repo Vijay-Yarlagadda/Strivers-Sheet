@@ -23,5 +23,6 @@ public class SingleElement {
 
         int ans = getSingleElement(arr);
         System.out.println("The single element is: " + ans);
+        sc.close();
     }
 }

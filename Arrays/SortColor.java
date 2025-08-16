@@ -9,7 +9,7 @@ class SortColor {
             else if (nums[i] == 1)
                 one++;
             else
-                two++;
+                two += 1;
         }
         for (int i = 0; i < zero; i++) {
             nums[i] = 0;
