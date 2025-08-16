@@ -1,4 +1,3 @@
-import java.util.*;
 
 //compares first element with second, if first is greater than second, swap them
 //then compares second with third, if second is greater than third, swap them

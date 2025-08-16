@@ -1,4 +1,3 @@
-import java.util.*;
 
 //in this technique, first element is sorted and then the second element is compared with the first
 //if the second element is smaller, it is placed before the first element and first element to 2nd one then first two are sorted and soo on...

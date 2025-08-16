@@ -1,4 +1,3 @@
-import java.util.*;
 
 //inn this techniques using there positions we swap, take first element as base and if any element is smaller than the base, we swap it with the base. so onn...
 class SelectionSort {
