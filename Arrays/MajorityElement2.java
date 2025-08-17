@@ -5,25 +5,20 @@ class MajorityElement2 {
         int count = 0, val = nums.length / 3;
         // System.out.println(val);
         List<Integer> list = new ArrayList<>();
-        for (int j = 0; j < nums.length; j++) {
-            // System.out.println("j" + j);
-            int temp = nums[j];
-            // System.out.println(temp);
-            for (int i = j; i < nums.length; i++) {
-                // System.out.println("i" + i);
-                if (temp == nums[i]) {
-                    count++;
+        for (int i = 0; i < nums.length; i++) {
+            if (list.size() == 0 || list.get(0) != nums[i]) {
+                count = 0;
+                for (int j = 0; j < nums.length; j++) {
+                    if (nums[i] == nums[j]) {
+                        count++;
+                    }
                 }
-                if ((count > val) && !list.contains(temp)) {
-                    // System.out.println("true");
-                    count = 0;
-                    list.add(temp);
-                    break;
-                }
-                if (i == nums.length - 1) {
-                    count = 0;
+                if (count > val) {
+                    list.add(nums[i]);
                 }
             }
+            if (list.size() == 2)
+                break;
         }
         return list;
     }
