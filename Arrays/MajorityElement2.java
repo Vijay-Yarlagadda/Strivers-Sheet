@@ -6,17 +6,22 @@ class MajorityElement2 {
         // System.out.println(val);
         List<Integer> list = new ArrayList<>();
         for (int j = 0; j < nums.length; j++) {
+            // System.out.println("j" + j);
             int temp = nums[j];
             // System.out.println(temp);
             for (int i = j; i < nums.length; i++) {
+                // System.out.println("i" + i);
                 if (temp == nums[i]) {
                     count++;
                 }
-                if (count > val) {
-                    // System.out.println("true" + count);
+                if ((count > val) && !list.contains(temp)) {
+                    // System.out.println("true");
                     count = 0;
                     list.add(temp);
                     break;
+                }
+                if (i == nums.length - 1) {
+                    count = 0;
                 }
             }
         }
