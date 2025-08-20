@@ -40,7 +40,6 @@ class ThreeSum {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        // ThreeSum ts = new ThreeSum();
         List<List<Integer>> ans = threeSum(a);
         for (List<Integer> it : ans) {
             System.out.print("[");
