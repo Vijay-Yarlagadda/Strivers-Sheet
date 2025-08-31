@@ -25,7 +25,7 @@ public class SubArrWithXorK {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter array size: ");
+        System.out.println("Enter size of the array: ");
         int n = sc.nextInt();
         System.out.println("Enter array elements: ");
         int a[] = new int[n];
