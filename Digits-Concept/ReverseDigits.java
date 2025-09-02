@@ -5,13 +5,14 @@ class ReverseDigits {
         Scanner sc = new Scanner(System.in);
         int n;
         System.out.print("Enter a number: ");
-        n=sc.nextInt();
-        int rev=0,digit;
-            while(n!=0){
-                digit=n%10;
-                rev=rev*10+digit;
-                n=n/10;
-            }
-            System.out.println(rev);
+        n = sc.nextInt();
+        sc.close();
+        int rev = 0, digit;
+        while (n != 0) {
+            digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+        System.out.println(rev);
     }
 }
