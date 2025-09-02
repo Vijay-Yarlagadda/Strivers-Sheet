@@ -14,5 +14,6 @@ class Armstrong {
 			n = n / 10;
 		}
 		System.out.println(num == temp);
+		sc.close();
 	}
 }
