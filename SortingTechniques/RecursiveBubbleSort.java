@@ -26,6 +26,7 @@ class RecursiveBubbleSort {
         System.out.println("Enter array length: ");
         int n = sc.nextInt();
         int a[] = new int[n];
+        System.out.println("Enter array elements: ");
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
