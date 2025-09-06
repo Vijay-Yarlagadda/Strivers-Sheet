@@ -30,7 +30,7 @@ class RecursiveBubbleSort {
         }
         int b[] = new int[n];
         RecursiveBubbleSort rb = new RecursiveBubbleSort();
-        b = rb.bubbleSort(a);
+        b = bubbleSort(a);
         for (int nums : a) {
             System.out.print(nums + " ");
         }
