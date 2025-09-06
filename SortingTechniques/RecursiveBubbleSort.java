@@ -34,6 +34,6 @@ class RecursiveBubbleSort {
         for (int nums : a) {
             System.out.print(nums + " ");
         }
-
+        sc.close();
     }
 }
