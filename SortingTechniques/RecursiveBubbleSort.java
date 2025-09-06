@@ -29,7 +29,6 @@ class RecursiveBubbleSort {
             a[i] = sc.nextInt();
         }
         int b[] = new int[n];
-        // RecursiveBubbleSort rb = new RecursiveBubbleSort();
         b = bubbleSort(a);
         for (int nums : a) {
             System.out.print(nums + " ");
