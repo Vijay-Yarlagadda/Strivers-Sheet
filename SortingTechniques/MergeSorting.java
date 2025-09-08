@@ -51,11 +51,13 @@ public class MergeSorting {
         System.out.println("Enter array size: ");
         int n = sc.nextInt();
         int[] nums = new int[n];
+        System.out.println("Enter elements: ");
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
         MergeSorting ms = new MergeSorting();
         int[] sorted = ms.mergeSort(nums);
+        System.out.println("After sorting:");
         for (int val : sorted) {
             System.out.print(val + " ");
         }
