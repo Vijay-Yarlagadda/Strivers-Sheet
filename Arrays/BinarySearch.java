@@ -1,13 +1,20 @@
 import java.util.Scanner;
 
 class BinarySearch {
+
+    public static int binarySearch(int[] nums, int low, int high, int target) {
+        if (low > high)
+            return -1;
+        int mid = (low + high) / 2;
+        if (target == nums[mid])
+            return mid;
+        else if (target < nums[mid])
+            return binarySearch(nums, 0, mid - 1, target);
+        return binarySearch(nums, mid + 1, nums.length - 1, target);
+    }
+
     public static int search(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == target) {
-                return i;
-            }
-        }
-        return -1;
+        return binarySearch(nums, 0, nums.length - 1, target);
     }
 
     public static void main(String[] args) {
