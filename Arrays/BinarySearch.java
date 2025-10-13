@@ -9,8 +9,8 @@ class BinarySearch {
         if (target == nums[mid])
             return mid;
         else if (target < nums[mid])
-            return binarySearch(nums, 0, mid - 1, target);
-        return binarySearch(nums, mid + 1, nums.length - 1, target);
+            return binarySearch(nums, low, mid - 1, target);
+        return binarySearch(nums, mid + 1, high, target);
     }
 
     public static int search(int[] nums, int target) {
