@@ -1,13 +1,19 @@
 import java.util.*;
 
 public class UpperBound {
-    public static int upperBound(int[] nums, int x) {
-        for (int i = 0; i < nums.length; i++) {
-            if (x < nums[i]) {
-                return i;
-            }
+    public static int upperBoundRec(int[] arr, int low, int high, int x, int ans) {
+        if (low > high)
+            return ans;
+        int mid = (low + high) / 2;
+        if (arr[mid] > x) {
+            return upperBoundRec(arr, low, mid - 1, x, mid);
+        } else {
+            return upperBoundRec(arr, mid + 1, high, x, ans);
         }
-        return -1;
+    }
+
+    public static int upperBound(int[] arr, int x) {
+        return upperBoundRec(arr, 0, arr.length - 1, x, arr.length);
     }
 
     public static void main(String args[]) {
