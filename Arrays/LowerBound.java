@@ -1,13 +1,19 @@
 import java.util.*;
 
 class LowerBound {
-    public static int lowerBound(int[] nums, int x) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] > x || nums[i] == x) {
-                return i;
-            }
+    public static int lowerBoundRec(int[] arr, int low, int high, int x, int ans) {
+        if (low > high)
+            return ans;
+        int mid = (low + high) / 2;
+        if (arr[mid] >= x) {
+            return lowerBoundRec(arr, low, mid - 1, x, mid);
+        } else {
+            return lowerBoundRec(arr, mid + 1, high, x, ans);
         }
-        return -1;
+    }
+
+    public static int lowerBound(int[] arr, int x) {
+        return lowerBoundRec(arr, 0, arr.length - 1, x, arr.length);
     }
 
     public static void main(String args[]) {
